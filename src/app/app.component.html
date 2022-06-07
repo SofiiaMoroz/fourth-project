@@ -51,6 +51,12 @@
         [highlightColor]="'yellow'">
         Style me with custom directive with using Renderer (hover the text)</p>
         <!-- Square brackets are used here with directive name because we want to bind to a property in that directive -->
+        <div [ngSwitch]="value">
+          <p *ngSwitchCase="5">Value is 5</p>
+          <p *ngSwitchCase="10">Value is 10</p>
+          <p *ngSwitchCase="100">Value is 100</p>
+          <p *ngSwitchDefault>Value is Default</p>
+        </div>
     </div>
   </div>
 </div>
